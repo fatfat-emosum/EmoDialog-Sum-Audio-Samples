@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EmoDialog-Sum Audio Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .dialogue {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    .dialogue h2 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+    audio {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .label {
+      font-weight: bold;
+    }
+    p {
+      margin: 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>EmoDialog-Sum: Audio Demonstration</h1>
+
+  <div id="content"></div>
+
+  <script>
+    fetch('samples.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('content');
+        data.forEach(sample => {
+          const block = document.createElement('div');
+          block.className = 'dialogue';
+          block.innerHTML = `
+            <h2>${sample.id}</h2>
+            <p class="label">Transcript:</p>
+            <p>${sample.transcript.replaceAll("\n", "<br>")}</p>
+
+            <p class="label">Audio:</p>
+            <audio controls>
+              <source src="${sample.audio_url}" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+
+            <p class="label">Emotion Summary:</p>
+            <p>${sample.emotion_summary}</p>
+
+            <p class="label">Paralinguistic Info:</p>
+            <p>${sample.paralinguistic_info}</p>
+
+            <p class="label">Generated Summary:</p>
+            <p>${sample.generated_summary}</p>
+          `;
+          container.appendChild(block);
+        });
+      })
+      .catch(err => {
+        document.getElementById('content').innerHTML = `<p style="color:red;">Failed to load data: ${err}</p>`;
+      });
+  </script>
+</body>
+</html>
