@@ -1,0 +1,18 @@
+[
+  {
+  "id": "dialogue_001",
+  "transcript": "#Person1#: Ms. Dawson, I need you to, uh, take a dictation for me.\n#Person2#: Yes, sir...\n#Person1#: This should go out as an intra-office memorandum to all employees by, you know, this afternoon. Are you ready?\n#Person2#: Yes, sir. Go ahead.\n#Person1#: Okay, so... Attention all staff... Effective immediately, all office communications are restricted to email correspondence and official memos.\n#Person2#: Uh-huh\n#Person1#: The use of Instant Message programs by employees during working hours is, well, strictly prohibited.\n#Person2#: Sir, does this apply to, just, intra-office communications only? Or will it also restrict external communications?\n#Person1#: It should apply to all communications, not only in this office between employees, but also any outside communications, if you know what I mean.\n#Person2#: I see\n#Person2#: But sir, many employees use Instant Messaging to communicate with their clients, right?\n#Person1#: They will just have to, uh, change their communication methods.\n#Person2#: Okay\n#Person1#: I don't want anyone using Instant Messaging in this office. It wastes too much time, you know? Now, please continue with the memo. Where were we?\n#Person2#: This applies to internal and external communications, right?\n#Person1#: Yes, that's right. Any employee who persists in using Instant Messaging will first receive a warning and be placed on probation.\n#Person2#: Got it\n#Person1#: At second offense, the employee will face termination. Any questions regarding this new policy may be directed to department heads, okay?\n#Person2#: Is that all?\n#Person1#: Yes, I think so. Please get this memo typed up and distributed to all employees before, you know, 4 pm.\n#Person2#: Alright, sir.\n#Person1#: Thanks, Ms. Dawson.",
+  "audio_url": "https://www.dropbox.com/scl/fi/tqa5zg4u2kj26pyovl897/dialogue_0_overlap.wav?rlkey=5684i90ijfgqqjv5k791jfu6t&st=o6od2z29&raw=1",
+  "emotion_summary": "Person1 expresses authority and control, while Person2 shows compliance and curiosity.",
+  "paralinguistic_info": "Person1: male, middle-aged adult; Person2: female, middle-aged adult",
+  "generated_summary": "Ms. Dawson helps #Person1# to write a memo to inform every employee that they have to change the communication method and should not use Instant Messaging anymore."
+  },
+  {
+    "id": "dialogue_0452",
+    "transcript": "#Person1#: It’s my birthday!\n#Person2#: Happy birthday!",
+    "audio_url": "https://www.dropbox.com/s/xyz456/dialogue_0452.wav?raw=1",
+    "emotion_summary": "Person1: Happiness; Person2: Joy",
+    "paralinguistic_info": "Pitch: high, Speaking rate: fast",
+    "generated_summary": "A cheerful birthday exchange between two people."
+  }
+]
