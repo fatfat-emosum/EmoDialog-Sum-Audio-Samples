@@ -10,7 +10,7 @@
   {
     "id": "dialogue_0452",
     "transcript": "#Person1#: It’s my birthday!\n#Person2#: Happy birthday!",
-    "audio_url": "https://www.dropbox.com/s/xyz456/dialogue_0452.wav?raw=1",
+    "audio_url": "static/audios/dialogue_0_overlap.wav",
     "emotion_summary": "Person1: Happiness; Person2: Joy",
     "paralinguistic_info": "Pitch: high, Speaking rate: fast",
     "generated_summary": "A cheerful birthday exchange between two people."
