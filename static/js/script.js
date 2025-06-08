@@ -22,6 +22,9 @@ function renderSample(index) {
       Your browser does not support the audio element.
     </audio>
 
+    <p class="label">Speaker Information:</p>
+    <p>${sample.paralinguistic_info || 'N/A'}</p>
+
     <p class="label">Emotion Summary:</p>
     <p>${sample.emotion_summary || 'N/A'}</p>
 
