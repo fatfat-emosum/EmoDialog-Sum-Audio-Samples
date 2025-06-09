@@ -25,10 +25,10 @@ function renderSample(index) {
     <p class="label">Speaker Information:</p>
     <p>${sample.paralinguistic_info || 'N/A'}</p>
 
-    <p class="label">Emotion Summary:</p>
+    <p class="label">Emotion-rich Summary:</p>
     <p>${sample.emotion_summary || 'N/A'}</p>
 
-    <p class="label">Generated Summary:</p>
+    <p class="label">Factual Summary:</p>
     <p>${sample.generated_summary || 'N/A'}</p>
   </div>
 `;
